@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
+import 'semantic-ui-css/semantic.min.css';
 
 import Charts from "./components/Charts";
 import Navbar from "./components/Navbar";
+import DropDown from './components/DropDown';
 
 import "./styles.scss";
 import { useLocalStorage } from "./hooks/useLocalStorage";
@@ -25,6 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <DropDown/>
       <Charts coinData={coinData} />
     </div>
   );
