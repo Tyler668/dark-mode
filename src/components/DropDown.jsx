@@ -4,8 +4,8 @@ import { Dropdown } from 'semantic-ui-react'
 const friendOptions = [
   {
     key: 'Jenny Hess',
-    text: 'Jenny Hess',
-    value: 'Jenny Hess',
+    text: 'Bitcoin',
+    value: 'Bitcoin',
     image: { avatar: true, src: '/images/avatar/small/jenny.jpg' },
   },
   {
@@ -42,7 +42,7 @@ const friendOptions = [
 
 const DropdownExampleSelection = () => (
   <Dropdown
-    placeholder='Select Friend'
+    placeholder='Select Currency'
     fluid
     selection
     options={friendOptions}

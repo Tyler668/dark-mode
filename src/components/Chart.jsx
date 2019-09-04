@@ -2,6 +2,8 @@ import React from "react";
 import moment from "moment";
 import {
   LineChart,
+  AreaChart,
+  Area,
   Line,
   CartesianGrid,
   XAxis,
@@ -27,14 +29,16 @@ const Chart = ({ sparklineData }) => {
     .filter(data => data);
 
   return (
-    <LineChart width={1100} height={300} data={formattedData}>
-      <Line type="monotone" dataKey="value" stroke="#8884d8" />
+
+    <AreaChart width={1100} height={300} data = {formattedData} >
+      <Area type="monotone" dataKey="value" stroke="red" fill = 'red' />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
       <XAxis dataKey="date" interval={3} />
       <YAxis />
       <Tooltip />
-    </LineChart>
+    </AreaChart>
   );
 };
 
 export default Chart;
+
