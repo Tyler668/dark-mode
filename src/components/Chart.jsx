@@ -31,9 +31,9 @@ const Chart = ({ sparklineData }) => {
   return (
 
     <AreaChart width={1100} height={300} data = {formattedData} >
-      <Area type="monotone" dataKey="value" stroke="red" fill = 'red' />
+      <Area type="monotone" dataKey="value" stroke="red" fill = 'purple' />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <XAxis dataKey="date" interval={3} />
+      <XAxis dataKey="date" interval={1} />
       <YAxis />
       <Tooltip />
     </AreaChart>

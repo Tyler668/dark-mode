@@ -10,13 +10,13 @@ const friendOptions = [
   },
   {
     key: 'Elliot Fu',
-    text: 'Elliot Fu',
+    text: 'Ethereum',
     value: 'Elliot Fu',
     image: { avatar: true, src: '/images/avatar/small/elliot.jpg' },
   },
   {
     key: 'Stevie Feliciano',
-    text: 'Stevie Feliciano',
+    text: 'XRP',
     value: 'Stevie Feliciano',
     image: { avatar: true, src: '/images/avatar/small/stevie.jpg' },
   },
@@ -28,7 +28,7 @@ const friendOptions = [
   },
   {
     key: 'Matt',
-    text: 'Matt',
+    text: 'Bitcoin Cash',
     value: 'Matt',
     image: { avatar: true, src: '/images/avatar/small/matt.jpg' },
   },
